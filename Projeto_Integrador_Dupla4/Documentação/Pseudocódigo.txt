@@ -1,26 +1,104 @@
 INICIO - APRESENTAÇÃO INICIAL DO MENU E PRIMEIRA DECISÃO DO USUÁRIO
-	Variaveis de caracteres tipoReceita, regiaoEscolhida, tipoConsumidor, tipoIntolerancia
+	Variaveis de caracteres
+	entrada, pratoPrincipal, sobremesa, tipoConsumidor, entradaEscolhida, pratoPrincipalEscolhido, sobremesaEscolhida
 	
-	escreva("=== LISTA DE RECEITAS NACIONAIS ===")
-	escreva("| ENTRADA | PRATO PRINCIPAL | SOBREMESA |")
-	escreva("Que tipo de receita você deseja fazer? )
-	leia(tipoReceita)
+	escreva("\n=== LISTA DE RECEITAS NACIONAIS ===\n")
+	escreva("\n| ENTRADA | PRATO PRINCIPAL | SOBREMESA |\n")
+	escreva("\n| NORTE | NORDESTE | CENTRO-OESTE | SUDESTE | SUL |\n")
+	escreva("\n| GERAL | VEGETARIANO | VEGANO |\n")
+	escreva("Ao responder, escreva em letra minuscula todas as respostas.\n")
+	escreva("Caso não queira escolher um tipo de prato, apenas aperte "enter"\n")
 
-// Dependendo da opção escolhida, a lista de opções irão diminuir, mas as perguntas permanecerão as mesmas
-	
-	escreva("| NORTE | NORDESTE | CENTRO-OESTE | SUDESTE | SUL |")
-	escreva("Em que região brasileira você deseja procurar a sua receita? ")
-	leia(regiaoEscolhida)
+	escreva("Em que região brasileira você deseja procurar a sua entrada? \n")
+	leia(entrada)
 
+// Dependendo da opção escolhida, a lista de opções irão diminuir, mas as perguntas permanecerão as mesmas 
 	
-	escreva("| GERAL | VEGETARIANO | VEGANO |")
-	escreva("Que tipo de consumidor voce se identifica? ")
+	escreva("Em que região brasileira você deseja procurar o seu prato principal? \n")
+	leia(pratoPrincipal)
+
+	escreva("Em que região brasileira você deseja procurar a sua sobremesa? \n")
+	leia(sobremesa)
+
+	escreva("Que tipo de consumidor voce se identifica? \n")
 	leia(tipoConsumidor)
 
+// Após o usuário escolher as regiões e identificar o tipo de consumidor que o usuário decidiu, ele será apresentado com a lista de receitas que deverão ser escolhidas
+// Vale ressaltar que os alimentos colocados aqui são apenas exemplos e poderão ser alterados posteriormente no desenvolvimento do codigo
 	
-	escreva("| NENHUMA | LACTOSE | GLUTEN | FRUTOSE | HISTAMINA |")
-	escreva("Que tipo de consumidor voce se identifica? ")
-	leia(tipoConsumidor)
+	escreva("\n===================================\n")
+  	escolha (entrada)
+	    caso norte
+	      escreva("1 - Tacaca \n2 - Vatapa\n")
+	    caso nordeste
+	      escreva("1 - Cuscuz \n2 - Acaraje\n")
+	    caso centro-oeste
+	      escreva("1 - Quiabo \n2 - Chipa\n")
+	    caso sudeste
+	      escreva("1 - Pao_de_queijo \n2 - Coxinha\n")
+	    caso sul
+	      escreva("1 - Pinhão \n2 - Tainha\n")
+	    DEFAULT
+	      ESCREVA("Opcao de entrada nao selecionada\n")
 
+	se (entrada for vazia) {
+		continue o código
+	} se não {
+		escreva("Qual entrada voce deseja selecionar? \n")
+		leia(entradaEscolhida)
+	}
+
+// O usuário irá escolher a partir da listagem apresentada uma entrada e após a seleção do prato principal e da sobremesa, que seguem o mesmo sistema de listagem e seleção, 
+
+  	escolha (pratoPrincipal)
+	    caso norte
+	      escreva("1 - Manicoba \n2 - Pirarucu \n")
+	    caso nordeste
+	      escreva("1 - Moqueca \n2 - Baiao \n")
+	    caso centro-oeste
+	      escreva("1 - Arroz_com_pequi \n2 - Galinhada \n")
+	    caso sudeste
+	      escreva("1 - Feijoada \n2 - Virado_Paulista \n")
+	    caso sul
+	      escreva("1 - Churrasco \n2 - Galeto \n")
+	    DEFAULT
+	      ESCREVA("Opcao de prato principal nao selecionada\n")
+
+	se (pratoPrincipal) {
+		continue o código
+	} se não {
+		escreva("Qual prato principal voce deseja selecionar? \n")
+		leia(pratoPrincipalEscolhido)
+	}
+
+  	escolha (sobremesa)
+	    caso norte
+	      escreva("1 - Cupuacu \n2 - Acai \n")
+	    caso nordeste
+	      escreva("1 - Cocada \n2 - Mugunza \n")
+	    caso centro-oeste
+	      escreva("1 - Furrundum \n2 - Pamonha \n")
+	    caso sudeste
+	      escreva("1 - Doce_de_leite \n2 - Goiabada \n")
+	    caso sul
+	      escreva("1 - Cuca \n2 - Grostoli \n")
+	    DEFAULT
+	      ESCREVA("Opcao de sobremesa nao selecionada\n")
+
+	se (sobremesa for vazia) {
+		continue o código
+	} se não {
+		escreva("Qual sobremesa voce deseja selecionar? \n")
+		leia(sobremesaEscolhida)
+	}
+
+// Após a seleção exata de cada receita, elas serao apresentadas apos um menu com intuito de separar cada etapa do código
+
+	escreva("\n======================================================\n")
+	escreva("O usuário é consumidor (tipoConsumidor)\n")
+	escreva("Entrada escolhida: (entradaEscolhida)\n")
+	escreva("Prato principal escolhido: (pratoPrincipalEscolhido)\n")
+	escreva("Sobremesa escolhida: (sobremesaEscolhida)\n")
+	escreva("Tenha uma otima refeicao, espero que tenha um otimo tempo cozinhando as receitas!")
 
 FIM
