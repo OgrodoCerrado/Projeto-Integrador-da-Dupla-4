@@ -1,0 +1,26 @@
+INICIO - APRESENTAÇÃO INICIAL DO MENU E PRIMEIRA DECISÃO DO USUÁRIO
+	Variaveis de caracteres tipoReceita, regiaoEscolhida, tipoConsumidor, tipoIntolerancia
+	
+	escreva("=== LISTA DE RECEITAS NACIONAIS ===")
+	escreva("| ENTRADA | PRATO PRINCIPAL | SOBREMESA |")
+	escreva("Que tipo de receita você deseja fazer? )
+	leia(tipoReceita)
+
+// Dependendo da opção escolhida, a lista de opções irão diminuir, mas as perguntas permanecerão as mesmas
+	
+	escreva("| NORTE | NORDESTE | CENTRO-OESTE | SUDESTE | SUL |")
+	escreva("Em que região brasileira você deseja procurar a sua receita? ")
+	leia(regiaoEscolhida)
+
+	
+	escreva("| GERAL | VEGETARIANO | VEGANO |")
+	escreva("Que tipo de consumidor voce se identifica? ")
+	leia(tipoConsumidor)
+
+	
+	escreva("| NENHUMA | LACTOSE | GLUTEN | FRUTOSE | HISTAMINA |")
+	escreva("Que tipo de consumidor voce se identifica? ")
+	leia(tipoConsumidor)
+
+
+FIM
