@@ -27,7 +27,7 @@ int main()
 		printf("Escolha uma das opcoes a seguir: \n");
 		printf("\n| (1) ENTRADA | (2) PRATO PRINCIPAL | (3) SOBREMESA | (4) SAIR\n");
 		scanf("%d", &opcaoMenu);
-
+		getchar();
 		switch (opcaoMenu) 
 		{
 			case 1:
@@ -35,7 +35,7 @@ int main()
 				printf("\n| (1) NORTE | (2) NORDESTE | (3) CENTRO-OESTE | (4) SUDESTE | (5) SUL |\n");
 				printf("Em que região brasileira você deseja procurar a sua entrada? \n");
 				scanf("%d", &regiaoEntrada);
-
+				getchar();
 				switch (regiaoEntrada) 
 					{
 						case 1:
@@ -45,10 +45,10 @@ int main()
 							switch (entradaEscolhidaNumerica)
 							{
 							case 1:
-								strcpy(entradaEscolhida[50], "Tacaca");
+								strcpy(entradaEscolhida, "Tacaca");
 								break;
 							case 2:
-								strcpy(entradaEscolhida[50], "Vatapa");
+								strcpy(entradaEscolhida, "Vatapa");
 							default:
 								break;
 							}
@@ -60,10 +60,10 @@ int main()
 							switch (entradaEscolhidaNumerica)
 							{
 							case 1:
-								strcpy(entradaEscolhida[50], "Cuscuz");
+								strcpy(entradaEscolhida, "Cuscuz");
 								break;
 							case 2:
-								strcpy(entradaEscolhida[50], "Acaraje");
+								strcpy(entradaEscolhida, "Acaraje");
 							default:
 								break;
 							}
@@ -75,10 +75,10 @@ int main()
 							switch (entradaEscolhidaNumerica)
 							{
 							case 1:
-								strcpy(entradaEscolhida[50], "Quiabo");
+								strcpy(entradaEscolhida, "Quiabo");
 								break;
 							case 2:
-								strcpy(entradaEscolhida[50], "Chipa");
+								strcpy(entradaEscolhida, "Chipa");
 							default:
 								break;
 							}
@@ -90,10 +90,10 @@ int main()
 							switch (entradaEscolhidaNumerica)
 							{
 							case 1:
-								strcpy(entradaEscolhida[50], "Pao de queijo");
+								strcpy(entradaEscolhida, "Pao de queijo");
 								break;
 							case 2:
-								strcpy(entradaEscolhida[50], "Coxinha");
+								strcpy(entradaEscolhida, "Coxinha");
 							default:
 								break;
 							}
@@ -105,10 +105,10 @@ int main()
 							switch (entradaEscolhidaNumerica)
 							{
 							case 1:
-								strcpy(entradaEscolhida[50], "Pinhao");
+								strcpy(entradaEscolhida, "Pinhao");
 								break;
 							case 2:
-								strcpy(entradaEscolhida[50], "Tainha");
+								strcpy(entradaEscolhida, "Tainha");
 							default:
 								break;
 							}
@@ -124,7 +124,7 @@ int main()
 					printf("\n| (1) NORTE | (2) NORDESTE | (3) CENTRO-OESTE | (4) SUDESTE | (5) SUL |\n");
 					printf("Em que região brasileira você deseja procurar o seu prato principal? \n");
 					scanf("%d", &regiaoPratoPrincipal);
-
+					getchar();
 				switch (regiaoPratoPrincipal) 
 					{
 						case 1:
@@ -134,10 +134,10 @@ int main()
 							switch (pratoPrincipalEscolhidoNumerico)
 							{
 							case 1:
-								strcpy(pratoPrincipalEscolhido[50], "Manicoba");
+								strcpy(pratoPrincipalEscolhido, "Manicoba");
 								break;
 							case 2:
-								strcpy(pratoPrincipalEscolhido[50], "Pirarucu");
+								strcpy(pratoPrincipalEscolhido, "Pirarucu");
 							default:
 								break;
 							}
@@ -149,10 +149,10 @@ int main()
 							switch (pratoPrincipalEscolhidoNumerico)
 							{
 							case 1:
-								strcpy(pratoPrincipalEscolhido[50], "Moqueca");
+								strcpy(pratoPrincipalEscolhido, "Moqueca");
 								break;
 							case 2:
-								strcpy(pratoPrincipalEscolhido[50], "Baiao");
+								strcpy(pratoPrincipalEscolhido, "Baiao");
 							default:
 								break;
 							}
@@ -164,10 +164,10 @@ int main()
 							switch (pratoPrincipalEscolhidoNumerico)
 							{
 							case 1:
-								strcpy(pratoPrincipalEscolhido[50], "Arroz com pequi");
+								strcpy(pratoPrincipalEscolhido, "Arroz com pequi");
 								break;
 							case 2:
-								strcpy(pratoPrincipalEscolhido[50], "Galinhada");
+								strcpy(pratoPrincipalEscolhido, "Galinhada");
 							default:
 								break;
 							}
@@ -179,10 +179,10 @@ int main()
 							switch (pratoPrincipalEscolhidoNumerico)
 							{
 							case 1:
-								strcpy(pratoPrincipalEscolhido[50], "Feijoada");
+								strcpy(pratoPrincipalEscolhido, "Feijoada");
 								break;
 							case 2:
-								strcpy(pratoPrincipalEscolhido[50], "Virado Paulista");
+								strcpy(pratoPrincipalEscolhido, "Virado Paulista");
 							default:
 								break;
 							}
@@ -194,10 +194,10 @@ int main()
 							switch (pratoPrincipalEscolhidoNumerico)
 							{
 							case 1:
-								strcpy(pratoPrincipalEscolhido[50], "Churrasco");
+								strcpy(pratoPrincipalEscolhido, "Churrasco");
 								break;
 							case 2:
-								strcpy(pratoPrincipalEscolhido[50], "Galeto");
+								strcpy(pratoPrincipalEscolhido, "Galeto");
 							default:
 								break;
 							}
@@ -213,8 +213,8 @@ int main()
 					printf("\n| (1) NORTE | (2) NORDESTE | (3) CENTRO-OESTE | (4) SUDESTE | (5) SUL |\n");
 					printf("Em que região brasileira você deseja procurar a sua sobremesa? \n");
 					scanf("%d", &regiaoSobremesa);
-					
-					switch (regiaoPratoPrincipal) 
+					getchar();
+					switch (regiaoSobremesa) 
 						{
 							case 1:
 								printf("1 - Cupuacu \n2 - Acai\n");
@@ -223,10 +223,10 @@ int main()
 								switch (sobremesaEscolhidaNumerica)
 									{
 									case 1:
-										strcpy(sobremesaEscolhida[50], "Cupuacu");
+										strcpy(sobremesaEscolhida, "Cupuacu");
 										break;
 									case 2:
-										strcpy(sobremesaEscolhida[50], "Acai");
+										strcpy(sobremesaEscolhida, "Acai");
 									default:
 										break;
 									}
@@ -238,10 +238,10 @@ int main()
 								switch (sobremesaEscolhidaNumerica)
 									{
 									case 1:
-										strcpy(sobremesaEscolhida[50], "Cocada");
+										strcpy(sobremesaEscolhida, "Cocada");
 										break;
 									case 2:
-										strcpy(sobremesaEscolhida[50], "Mugunza");
+										strcpy(sobremesaEscolhida, "Mugunza");
 									default:
 										break;
 									}
@@ -253,10 +253,10 @@ int main()
 								switch (sobremesaEscolhidaNumerica)
 									{
 									case 1:
-										strcpy(sobremesaEscolhida[50], "Furrundum");
+										strcpy(sobremesaEscolhida, "Furrundum");
 										break;
 									case 2:
-										strcpy(sobremesaEscolhida[50], "Pamonha");
+										strcpy(sobremesaEscolhida, "Pamonha");
 									default:
 										break;
 									}
@@ -268,10 +268,10 @@ int main()
 								switch (sobremesaEscolhidaNumerica)
 									{
 									case 1:
-										strcpy(sobremesaEscolhida[50], "Doce de leite");
+										strcpy(sobremesaEscolhida, "Doce de leite");
 										break;
 									case 2:
-										strcpy(sobremesaEscolhida[50], "Goiabada");
+										strcpy(sobremesaEscolhida, "Goiabada");
 									default:
 										break;
 									}
@@ -279,14 +279,14 @@ int main()
 							case 5:
 								printf("1 - Cuca \n2 - Grostoli\n");
 								printf("Qual sobremesa voce deseja selecionar? \n");
-								scanf("%s", &sobremesaEscolhidaNumerica);
+								scanf("%d", &sobremesaEscolhidaNumerica);
 								switch (sobremesaEscolhidaNumerica)
 									{
 									case 1:
-										strcpy(sobremesaEscolhida[50], "Cuca");
+										strcpy(sobremesaEscolhida, "Cuca");
 										break;
 									case 2:
-										strcpy(sobremesaEscolhida[50], "Grostoli");
+										strcpy(sobremesaEscolhida, "Grostoli");
 									default:
 										break;
 									}
@@ -310,10 +310,10 @@ int main()
 	printf("\n======================================================\n");
 	printf("RESUMO DO SEU CARDÁPIO\n");
 	printf("======================================================\n");
-	printf("O usuário é consumidor %s\n", tipoConsumidor[50]);
-	printf("Entrada escolhida: %s\n", entradaEscolhida[50]);
-	printf("Prato principal escolhido: %s\n", pratoPrincipalEscolhido[50]);
-	printf("Sobremesa escolhida: %s\n", sobremesaEscolhida[50]);
+	printf("O usuário é consumidor %s\n", tipoConsumidor);
+	printf("Entrada escolhida: %s\n", entradaEscolhida);
+	printf("Prato principal escolhido: %s\n", pratoPrincipalEscolhido);
+	printf("Sobremesa escolhida: %s\n", sobremesaEscolhida);
 	printf("Tenha uma otima refeicao, espero que tenha um otimo tempo cozinhando as receitas!");
 	
 // FIM
