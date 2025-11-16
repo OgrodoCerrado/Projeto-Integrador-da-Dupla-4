@@ -1,0 +1,6 @@
+o switch case não funciona com strings, especificamente, com as palavras norte, nordeste, centro-oeste, sudeste e sul
+após procurar, descobri que era necessário a utilização da biblioteca string.h para resolver o problema, além de desistir do sistema de switch case
+
+Após buscar no W3schools, comecei a usar a função strcmp para fazer a comparação entre duas strings, coisa que antes dava em erro no método que eu estava fazendo.
+
+Fiz testes com várias variáveis, como a variável tipoConsumidor não depende de nenhuma função, o usuário pode escrever outras coisas para se identificar como consumidor, mas acredito que não seja um grande problema, visto que existem outros tipos de consumidor além dos presentes no menu.
