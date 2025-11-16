@@ -4,3 +4,9 @@ após procurar, descobri que era necessário a utilização da biblioteca string
 Após buscar no W3schools, comecei a usar a função strcmp para fazer a comparação entre duas strings, coisa que antes dava em erro no método que eu estava fazendo.
 
 Fiz testes com várias variáveis, como a variável tipoConsumidor não depende de nenhuma função, o usuário pode escrever outras coisas para se identificar como consumidor, mas acredito que não seja um grande problema, visto que existem outros tipos de consumidor além dos presentes no menu.
+
+Tive problemas com excesso de caracteres, lixo computacional ocupando memória
+
+Transformar o int entrada/pratoPrincipal/sobremesaEscolhida(o) em string para o cardápio
+
+Fiz inumeras mudanças no código após mostrar o código para meu pai que trabalha na àrea, porque estava muito simples pela perceção dele, então o código saiu bastante do planejado pelo pseudocódigo, mas acredito que foi pelo melhor.
