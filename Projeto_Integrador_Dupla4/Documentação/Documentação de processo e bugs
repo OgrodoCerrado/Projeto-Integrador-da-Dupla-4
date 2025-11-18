@@ -1,12 +1,49 @@
-o switch case não funciona com strings, especificamente, com as palavras norte, nordeste, centro-oeste, sudeste e sul
-após procurar, descobri que era necessário a utilização da biblioteca string.h para resolver o problema, além de desistir do sistema de switch case
+Documentação:
 
-Após buscar no W3schools, comecei a usar a função strcmp para fazer a comparação entre duas strings, coisa que antes dava em erro no método que eu estava fazendo.
+Processo de construção do código:
 
-Fiz testes com várias variáveis, como a variável tipoConsumidor não depende de nenhuma função, o usuário pode escrever outras coisas para se identificar como consumidor, mas acredito que não seja um grande problema, visto que existem outros tipos de consumidor além dos presentes no menu.
+A primeira interação do código foi seguindo a risca o modelo proposto no pseudocódigo, o que acabou se provando falho, já que o código "switch case" não funciona com strings, especificamente com as palavras norte, nordeste, centro-oeste, sudeste e sul.
 
-Tive problemas com excesso de caracteres, lixo computacional ocupando memória
+A segunda interação começou de outra forma, com a implementação da biblioteca string.h, com o intuito de resolver o problema do switch case, que no fim falhou novamente.
 
-Transformar o int entrada/pratoPrincipal/sobremesaEscolhida(o) em string para o cardápio
+Antes de iniciar a terceira interação, pesquisei na W3schools funções que poderiam fazer a comparação entre duas strings, chegando na função strcmp, já que o método que tentei na segunda versão falhou. Já na terceira interação, fiz um sistema de if else complexo junto do strcmp para resolver o problema, o que funcionou, mas após mostrar o código para um mestre em computação, comentou que o projeto estava muito simples.
 
-Fiz inumeras mudanças no código após mostrar o código para meu pai que trabalha na àrea, porque estava muito simples pela perceção dele, então o código saiu bastante do planejado pelo pseudocódigo, mas acredito que foi pelo melhor.
+Dessa forma, busquei melhorar o código para que fique mais simples para o usuário e para outros desenvolvedores, consertar possíveis erros com excesso de caracteres e lixo computacional ocupando memória, além de ficar com uma interface mais complexa, envolvendo loops no menu. Um desafio que queria destacar foi o processo de transformar a escolha numérica do int entrada/pratoPrincipal/sobremesaEscolhida(o) do usuário em string para o cardapio, que após muita pesquisa e testes falhos, foi resolvido com a junção do switch case e strcpy. 
+
+Fiz testes com várias variáveis, como a variável tipoConsumidor não depende de nenhuma função como as outras, o usuário pode escrever outras coisas para se identificar como consumidor, mas acredito que não seja um grande problema, visto que existem outros tipos de consumidor além dos presentes no menu.
+
+Casos de Teste:
+
+1- 
+Escolhas comuns:
+consumidor Geral, entrada(nordeste,acaraje), prato principal(sudeste,feijoada) e sobremesa(sul,grostoli)
+Resultado esperado:consumidor Geral, entrada(acaraje), prato principal(feijoada) e sobremesa(grostoli)
+Resultado percebido:consumidor Geral, entrada(acaraje), prato principal(feijoada) e sobremesa(grostoli)
+PASSOU
+
+2- 
+Escolhas comuns, porém não selecionando entrada:
+consumidor vegetariano, entrada(vazia), prato principal(nordeste,moqueca) e sobremesa(sudeste, doce de leite)
+Resultado esperado:consumidor vegetariano, entrada(nao selecionada), prato principal(moqueca) e sobremesa(doce de leite)
+Resultado percebido:consumidor vegetariano, entrada(nao selecionada), prato principal(moqueca) e sobremesa(doce de leite)
+PASSOU
+	
+3- 
+Não selecionando nada:
+consumidor vazio, entrada(vazia), prato principal(vazio) e sobremesa(vazia)
+Resultado esperado: consumidor (vazio), entrada(Nao selecionada), prato principal(Nao selecionado) e sobremesa(Nao selecionada)
+Resultado percebido:consumidor (vazio), entrada(Nao selecionada), prato principal(Nao selecionado) e sobremesa(Nao selecionada)
+PASSOU
+
+4- 
+Escolhas comuns, porém escrevendo algo diferente na àrea de consumidor:
+consumidor Homem, entrada(centro-oeste, quiabo), prato principal(norte, manicoba) e sobremesa(norte, acai)
+Resultado esperado: consumidor homem, entrada(quiabo), prato principal(manicoba) e sobremesa(acai)
+Resultado percebido: consumidor homem, entrada(quiabo), prato principal(manicoba) e sobremesa(acai)
+PASSOU
+
+5- 
+Escolhendo valores invalidos para cada opcao:
+Resultado esperado: Consumidor "dsaokdaosdkoe", Sistema de loop não acabar devido valores invalidos e valores de entrada, prato principal e sobremesa ficarem como (nao selecionado)
+Resultado percebido: Consumidor "dsaokdaosdkoe", Sistema não pode ser finalizado já que com a entrada de valores invalidos para o sistema, o sistema não pode ser finalizado de forma esperada pelo código(pressionando 4, opção de sair e excluindo a opção de fechar o terminal)
+PASSOU
