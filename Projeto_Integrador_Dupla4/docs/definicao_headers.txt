@@ -1,0 +1,34 @@
+Definição de Headers
+Header: tipos.h
+
+-Define constantes de categoria.
+
+-Define structs do sistema.
+
+-Usado por todos os outros módulos.
+
+Header: entrada.h
+
+-Declara funções de coleta de entrada do usuário.
+
+-Inclui tipos.h.
+
+Header: opcoes.h
+
+-Declara banco de receitas (extern).
+
+-Declara funções de acesso aos dados.
+
+-Inclui tipos.h.
+
+Header: processamento.h
+
+-Declara as funções de lógica operacional.
+
+-Depende de tipos.h.
+
+Header: saida.h
+
+-Declara funções de apresentação do cardápio.
+
+-Depende de tipos.h.

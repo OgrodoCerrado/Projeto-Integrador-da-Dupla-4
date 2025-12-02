@@ -1,0 +1,32 @@
+1. Análise de Refatoração
+Pontos observados no código original:
+
+-O main.c concentrava grande parte da lógica.
+
+-Funções estavam misturando entrada, processamento e saída.
+
+-Dados das receitas estavam espalhados pelo código.
+
+-Não havia modularização adequada.
+
+-Uso de múltiplos vetores poderia ser substituído por struct.
+
+Problemas identificados:
+
+-Baixa legibilidade devido ao excesso de funções no mesmo arquivo.
+
+-Alta dependência entre partes do código.
+
+-Repetição de padrões em diversas funções.
+
+-Falta de organização lógica das responsabilidades.
+
+Oportunidades de melhoria:
+
+-Criar estruturas (structs) para representar entidades.
+
+-Dividir o código em módulos: entrada, dados, processamento e saída.
+
+-Centralizar receitas em um único módulo.
+
+-Criar headers para separar interface de implementação.

@@ -1,0 +1,42 @@
+Definição de Structs
+Struct: Receita
+
+Representa: um item do cardápio com identificação, nome, categoria e região.
+
+Campos:
+
+-int id — identificador único da receita.
+
+-char nome[50] — nome da receita.
+
+-int regiao — região de origem.
+
+-int categoria — categoria (entrada, prato ou sobremesa).
+
+Struct: Cardapio
+
+Representa: a seleção final feita pelo usuário.
+
+Campos:
+
+-Receita entrada — receita escolhida como entrada.
+
+-Receita pratoPrincipal — prato principal escolhido.
+
+-Receita sobremesa — sobremesa escolhida.
+
+Struct: Usuario
+
+Representa: informações do consumidor.
+
+Campos:
+
+-char tipoConsumidor[50] — tipo de consumidor (geral, vegano, vegetariano).
+
+Uso de Arrays de Structs
+
+O projeto utiliza:
+
+-Receita receitas[] — um array global contendo as 30 receitas.
+
+-Acesso por ID é feito diretamente via receitas[id - 1].

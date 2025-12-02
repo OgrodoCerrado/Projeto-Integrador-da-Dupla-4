@@ -1,0 +1,60 @@
+Estrutura de Módulos
+Módulo: Entrada
+
+Arquivo: entrada.c
+
+Header: entrada.h
+
+Funções:
+
+-lerTipoConsumidor()
+
+-escolherOpcaoMenu()
+
+-escolherRegiao()
+
+-escolherReceita()
+
+Módulo: Opcoes
+
+-Arquivo: opcoes.c
+
+-Header: opcoes.h
+
+-Funções:
+
+  -listarReceitas()
+
+  -obterReceitaPorId()
+
+Descrição: contém todo o banco de dados de receitas.
+
+Módulo: Processamento
+
+-Arquivo: processamento.c
+
+-Header: processamento.h
+
+  -Funções:
+
+  -escolherEntrada()
+
+  -escolherPrato()
+
+  -escolherSobremesa()
+
+Módulo: Saída
+
+-Arquivo: saida.c
+
+-Header: saida.h
+
+-Funções:
+
+ -exibirResumo()
+
+Módulo: Tipos
+
+-Arquivo: tipos.h
+
+-Funções: nenhuma — define apenas structs e constantes.
