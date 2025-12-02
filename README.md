@@ -5,11 +5,15 @@ Título: Sistema de Lista de Receitas da Culinária Brasileira
 
 Objetivo geral: Apresentar uma lista de receitas em que o usuário possa afunilar de pouco em pouco as opções disponíveis, até encontrar a opção desejada
 
-Principais funcionalidades previstas: Liberdade de decisão do usuário em decidir que opções ele quer, entrega do nome de cada receita, apresentação de opções para cada seleção
+Principais funcionalidades desenvolvidas: Liberdade de decisão do usuário em decidir que opções ele quer, entrega do nome de cada receita, apresentação de opções para cada seleção
+
+Contéudo em C utilizados:Estruturas de repetição(do, for e while), estruturas de decisão(switch case e if else), structs, modularização, listas, int, printf, ponteiros, biblioteca stdio.h e define
 
 Nomes dos autores: Igor Pechir Ramos e Italo Amorim Figueiredo
 
-Futuras Etapas: Capacidade de retornar a seleção anterior caso o usuário queira conferir outras alternativas, implementar a possibilidade dos usuarios adicionarem receitas alternativas a listagem original, descrição, lista de ingredientes, passo a passo e origem de cada receita escolhida
+Estrutura de pastas:Elas estão divididas da forma que foi pedida no roteiro do projeto 3, seguindo o src, include, docs e backup
+
+Futuras Etapas : Capacidade de retornar a seleção anterior caso o usuário queira conferir outras alternativas, implementar a possibilidade dos usuarios adicionarem receitas alternativas a listagem original, descrição, lista de ingredientes, passo a passo e origem de cada receita escolhida
 
 Link do repositorio no GitHub: https://github.com/OgrodoCerrado/Projeto-Integrador-da-Dupla-4.git
 
